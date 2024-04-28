@@ -1,0 +1,23 @@
+{
+  "name": "webauthn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@simplewebauthn/server": "^8.3.5",
+    "base64url": "^3.0.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
