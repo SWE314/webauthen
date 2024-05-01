@@ -24,7 +24,7 @@ After installation is completed, run this command
 npm run start
 ```
 
-Then open [http://localhost:3000 ](http://localhost:3000)
+
 
 ## Step 2 Add the registeration UI:
 
@@ -38,7 +38,7 @@ Add this code to public/index.html inside the body
 <script src="./auth.js" type="module"></script>
 ```
 
-Go check [http://localhost:3000 ](http://localhost:3000) and try to register.
+
 
 The button is not working, right? that becuase we do not have code inside ``auth.js``
 
@@ -175,6 +175,7 @@ import { generateRegistrationOptions, verifyRegistrationResponse, generateAuthen
 import base64url from 'base64url';
 import { signin, signup } from './db/db.mjs';
 
+const authenticators = {};  
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public'));
